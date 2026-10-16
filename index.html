@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101114">
+<title>AVITO AGENCY | Продвижение бизнеса</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#101114;--card:#191a1f;--orange:#ff6b24;--white:#fff;--muted:#a5a6ad}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--white);line-height:1.6}
+.wrap{max-width:1050px;margin:auto;padding:0 22px}
+header{padding:22px 0;border-bottom:1px solid #292a30}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{font-size:19px;font-weight:900;letter-spacing:1px}
+.logo span{color:var(--orange)}
+.badge{font-size:12px;color:#ffb38e;border:1px solid #67371f;padding:5px 10px;border-radius:30px}
+.hero{padding:76px 0 54px}
+.eyebrow{color:var(--orange);font-size:13px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(37px,8vw,68px);line-height:1.08;letter-spacing:-2px;margin:20px 0}
+h1 span{color:var(--orange)}
+.lead{max-width:600px;color:var(--muted);font-size:17px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:14px 20px;border-radius:12px;text-decoration:none;font-weight:800;border:1px solid #414249;color:white}
+.btn.primary{background:var(--orange);border-color:var(--orange);color:#17100c}
+section{padding:38px 0}
+.section-title{font-size:28px;margin-bottom:8px}
+.section-sub{color:var(--muted);margin-bottom:24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
+.card{background:var(--card);border:1px solid #2a2b31;border-radius:18px;padding:24px}
+.icon{font-size:27px;margin-bottom:12px}
+.card h3{font-size:18px;margin-bottom:8px}
+.card p{color:var(--muted);font-size:14px}
+.price{color:var(--orange);font-size:24px;font-weight:900;margin-top:15px}
+.offer{border:1px solid #62351f;background:linear-gradient(135deg,#261810,#191a1f);border-radius:20px;padding:28px}
+.offer h2{font-size:27px;margin-bottom:10px}
+.offer p{color:#c6c0bc}
+form{display:grid;gap:13px;margin-top:20px}
+input,select,textarea{width:100%;padding:15px;border-radius:11px;border:1px solid #383940;background:#111216;color:white;font:inherit}
+textarea{min-height:100px;resize:vertical}
+button{font:inherit;cursor:pointer}
+.note{font-size:12px;color:var(--muted)}
+footer{padding:30px 0;margin-top:35px;border-top:1px solid #292a30;color:var(--muted);font-size:13px}
+footer strong{color:white}
+@media(min-width:700px){.hero{padding:105px 0 75px}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap nav">
+<div class="logo">AVITO <span>AGENCY</span></div>
+<div class="badge">МАРКЕТИНГ ДЛЯ БИЗНЕСА</div>
+</div>
+</header>
+
+<main class="wrap">
+<div class="hero">
+<div class="eyebrow">Ваш бизнес — наша работа</div>
+<h1>Больше клиентов.<br><span>Больше заявок.</span></h1>
+<p class="lead">Помогаем бизнесу привлекать клиентов через Авито. Оформление аккаунта, объявления и инструменты для развития вашего бизнеса.</p>
+<div class="actions">
+<a class="btn primary" href="#order">Обсудить проект ↗</a>
+<a class="btn" href="#services">Наши услуги ↓</a>
+</div>
+</div>
+
+<section id="services">
+<h2 class="section-title">Что мы делаем</h2>
+<p class="section-sub">Решения для роста вашего бизнеса.</p>
+<div class="grid">
+<div class="card">
+<div class="icon">🎯</div>
+<h3>Ведение Авито</h3>
+<p>Оформление профиля, подготовка объявлений и улучшение подачи ваших услуг.</p>
+</div>
+<div class="card">
+<div class="icon">📈</div>
+<h3>Продвижение</h3>
+<p>Работа над качеством объявлений, анализ ниши и рекомендации по развитию.</p>
+</div>
+<div class="card">
+<div class="icon">🌐</div>
+<h3>Создание сайта</h3>
+<p>Современная страница для презентации компании, услуг и контактов.</p>
+</div>
+<div class="card">
+<div class="icon">🤖</div>
+<h3>Telegram-бот</h3>
+<p>Помогаем упростить общение с клиентами и приём обращений.</p>
+</div>
+</div>
+</section>
+
+<section>
+<div class="offer">
+<h2>Ваш бизнес может выглядеть сильнее</h2>
+<p>Расскажите о своей компании — обсудим задачи и подберём подходящий вариант работы.</p>
+<div class="price">От 30 000 ₽</div>
+<p class="note">Итоговая стоимость зависит от объёма задач. Условия согласовываются до начала работы.</p>
+</div>
+</section>
+
+<section id="order">
+<h2 class="section-title">Обсудим ваш проект</h2>
+<p class="section-sub">Заполните форму — откроется WhatsApp с подготовленным сообщением.</p>
+<form id="leadForm">
+<input id="name" placeholder="Ваше имя" required>
+<input id="phone" type="tel" placeholder="Ваш номер телефона" required>
+<select id="service" required>
+<option value="">Какая услуга интересует?</option>
+<option>Ведение Авито</option>
+<option>Продвижение объявлений</option>
+<option>Создание сайта</option>
+<option>Telegram-бот</option>
+<option>Комплексное продвижение</option>
+</select>
+<textarea id="details" placeholder="Расскажите о вашем бизнесе (необязательно)"></textarea>
+<button class="btn primary" type="submit">Отправить заявку в WhatsApp ↗</button>
+<p class="note">Нажимая кнопку, вы откроете WhatsApp. Форма сама по себе не сохраняет заявки.</p>
+</form>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<strong>AVITO AGENCY</strong><br>
+Продвижение бизнеса и цифровые решения.<br>
+© 2026 AVITO AGENCY
+</div>
+</footer>
+
+<script>
+document.getElementById('leadForm').addEventListener('submit',function(e){
+e.preventDefault();
+const name=document.getElementById('name').value.trim();
+const phone=document.getElementById('phone').value.trim();
+const service=document.getElementById('service').value;
+const details=document.getElementById('details').value.trim();
+const message='Здравствуйте! Меня зовут '+name+'. Мой телефон: '+phone+'. Интересует: '+service+'. '+details;
+window.open('https://wa.me/?text='+encodeURIComponent(message),'_blank');
+});
+</script>
+</body>
+</html>
